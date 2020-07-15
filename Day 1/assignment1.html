@@ -1,0 +1,46 @@
+/* Q1:Console Functions
+In javascript, the console is an object which provides access to the browser debugging console.We can open a console in web browser by using: Ctrl + Shift + K for windows and Command + Option + K for Mac. The console object provides us with several different methods, like :
+1. console.log()
+Mainly used to log(print) the output to the console. We can put any type inside the log(), be it a string, array, object, boolean etc.
+Ex:
+console.log('abc');  
+console.log(1); 
+console.log(true); 
+console.log(null); 
+
+2. console.error()
+Used to log error message to the console. Useful in testing of code. By default the error message will be highlighted with red color.
+Ex:
+console.error('This is a simple error'); 
+
+3. console.warn()
+Used to log warning message to the console. By default the warning message will be highlighted with yellow color.
+Ex:
+console.warn('This is a warning.'); 
+
+4. console.clear()
+Used to clear the console. The console will be cleared, in case of Chrome a simple overlayed text will be printed like : ‘Console was cleared’ while in firefox no message is returned.
+
+Ex:
+console.clear();
+
+5. time() and timeEnd()
+Whenever we want to know the amount of time spend by a block or a function, we can make use of the time() and timeEnd() methods provided by the javascript console object. They take a label which must be same, and the code inside can be anything( function, object, simple console).
+Ex:
+// console.time() and console.timeEnd() method  
+console.time('abc'); 
+ let fun =  function(){ 
+     console.log('fun is running'); 
+ } 
+ let fun2 = function(){ 
+     console.log('fun2 is running..'); 
+ } 
+ fun(); // calling fun(); 
+ fun2(); // calling fun2(); 
+console.timeEnd('abc'); 
+
+6.console.table()
+7.console.count()
+8.console.group() and console.groupEnd()
+9.custom console logs
+*/
