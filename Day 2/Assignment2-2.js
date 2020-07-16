@@ -1,5 +1,6 @@
 // Question 2 : Explain with example  remaing methods of String and Array
 
+
 // SEARCH : is used to search the element and print the index
 
 let str = "We can lear java script as fast as its easy to understand    ";
