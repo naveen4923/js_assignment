@@ -1,41 +1,14 @@
-<!DOCTYPE html> 
-<html> 
-  
-<body>  
-    <h2>DAY</h2>
+<!DOCTYPE html>
+<html >
+<head>
+    <h1> Asking user to enter input></h1>
+</head>
+<body>
     <script>
-    const days = ["null","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"]
-    const d = new Date();
-    document.write("Today is : "+ days[d.getDay()]);
-</script>
-    <h2>Time</h2>
-        <button onclick="myFunction()"> 
-          Click here to know Time      </button> 
+        let user = prompt("Enter the Name ","Harry");
+        console.log(user);
+        document.write("The entered name is " + user );
         
-        <p id="change"></p> 
-        <script> 
-            // JavaScript function to 
-            // Display 12 hour format 
-            function myFunction() { 
-                var date = new Date(); 
-                var hours = date.getHours(); 
-                var minutes = date.getMinutes(); 
-                var sec = date.getSeconds();
-                
-                // Check whether AM or PM 
-                var newformat = hours >= 12 ? 'PM' : 'AM';  
-                
-                // Find current hour in AM-PM Format 
-                hours = hours % 12;  
-                
-                // To display "0" as "12" 
-                hours = hours ? hours : 12;  
-                minutes = minutes < 10 ? '0' + minutes : minutes; 
-                
-                document.getElementById("change").innerHTML ="Current time is : " +
-                  hours +" "+ newformat+ ' : ' + minutes + ' : ' +sec ; 
-            } 
-        </script> 
-</body> 
-  
-</html> 
+    </script>
+</body>
+</html>
