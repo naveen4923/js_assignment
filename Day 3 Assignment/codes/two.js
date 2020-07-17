@@ -1,6 +1,5 @@
 console.log("hello");
 //Question 2
-let os ="Android";
-let version = "9";
-console.log(`"${os} ${version}"`);
-console.log(`The OS name is ${os} and verison is ${version}`);
+var os = prompt("Enter the os and Version ","Windows 10");
+let va = os.split(" ");
+console.log(` The OS name is ${va[0]} and Version is ${va[1]}`)
