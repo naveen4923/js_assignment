@@ -2,13 +2,16 @@ console.log("Hello");
 // Question 3
 
 //using conditional statements
- let marks = 50;
+let marks = +prompt();
  
  console.log(marks);
- if (marks==50) {
-  console.log("marks are 50 and grade is B")   
+ if (marks>=70&&marks<=100) {
+  console.log(`marks is ${marks} and grade is A+`);   
+ }else if (marks>=50&&marks<=70) {
+     console.log(`marks is ${marks} and grade is B`)
+ } else {
+    console.log(`marks is ${marks} and grade is C`)
  }
-
 //using switch or ternary operator
 
 //using ternary operator
