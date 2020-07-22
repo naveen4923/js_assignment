@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Whats your name ? </h1>
+   <form  name = "myForm">
+    <input type="text" name = "name" id="tt" placeholder="Enter Name : ">
+    <input type="checkbox" checked>
+    
+
+     </form>
+    <input type="submit"  onclick="display()">
+    <p id="demo"></p>
+     <script>
+         function display(){
+		    console.log('here')
+		    document.getElementById("demo").innerHTML ="Welcome "+document.getElementById("tt").value;		
+	}
+     </script>
+
+    <div id="myclock" class="clock"</div>
+    <center>
+        <script>
+        function showtime(){
+            var date = new Date();
+            var h = date.getHours();
+            var m = date.getMinutes();
+            var s = date.getSeconds();
+            var session = 'AM';
+
+            if(h==0){
+                h = 12;
+            }
+            if(h>12){
+                h = h-12;
+                session = 'PM';
+            }
+
+            h = (h<10) ? '0'+h:h;
+            m = (m<10) ? '0'+m:m;
+            s = (s<10) ? '0'+s:s;
+            var time = h+":"+m+":"+s+" "+session;
+            document.getElementById("myclock").innerText=time;
+            document.getElementById("myclock").innerContent=time;
+       
+            setTimeout(showtime,1000);
+        }
+        showtime();
+    
+        
+    </script>
+    </center>
+    <style></style>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 6</title>
+</head>
+   <script>
+    var c = ['blue','black','yellow','red','green'];
+    var currentindex = 0;
+
+    function change() {
+        document.bgColor = c[currentindex];
+        currentindex = (currentindex+1) % c.length;
+        setTimeout(change,5000);
+    }   
+
+   </script>
+<body onload="change()" >
+</body>
+</html>
